@@ -35,4 +35,9 @@ public class CalculatorTest {
         Exception ex = assertThrows(ArithmeticException.class, ()-> calc.sub(Integer.MIN_VALUE, 1));
         assertEquals("integer overflow", ex.getMessage());
     }
+
+    @Test
+    public void testMultiply_Success() {
+        assertEquals(24, calc.mul(4, 6));
+    }
 }

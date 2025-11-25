@@ -8,4 +8,8 @@ public class Calculator {
     public int sub(int firstNum, int secondNum) {
         return Math.subtractExact(firstNum, secondNum);
     }
+
+    public int mul(int firstNum, int secondNum) {
+        return Math.multiplyExact(firstNum, secondNum);
+    }
 }
