@@ -24,4 +24,15 @@ public class CalculatorTest {
         Exception ex = assertThrows(ArithmeticException.class, ()-> calc.add(Integer.MAX_VALUE, 1));
         assertEquals("integer overflow", ex.getMessage());
     }
+
+    @Test
+    public void testSubtract_Success() {
+        assertEquals(-2, calc.sub(4, 6));
+    }
+
+    @Test
+    public void testSubtract_Fail() {
+        Exception ex = assertThrows(ArithmeticException.class, ()-> calc.sub(Integer.MIN_VALUE, 1));
+        assertEquals("integer overflow", ex.getMessage());
+    }
 }
