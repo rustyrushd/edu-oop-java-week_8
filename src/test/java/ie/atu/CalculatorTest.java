@@ -40,4 +40,10 @@ public class CalculatorTest {
     public void testMultiply_Success() {
         assertEquals(24, calc.mul(4, 6));
     }
+
+    @Test
+    public void testMultiply_Fail() {
+        Exception ex = assertThrows(ArithmeticException.class, ()-> calc.mul(Integer.MIN_VALUE, -1));
+        assertEquals("integer overflow", ex.getMessage());
+    }
 }
