@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ie.atu</groupId>
-    <artifactId>week_8</artifactId>
+    <artifactId>lab_6-unit_testing</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
